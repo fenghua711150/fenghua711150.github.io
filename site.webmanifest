@@ -1,13 +1,15 @@
 {
-  "name": "风华 · Fenghua",
-  "short_name": "风华",
-  "description": "fenghua711150 的个人网站：全栈开发、界面设计与独立创作。",
+  "name": "NEON PINBALL · 赛博弹珠",
+  "short_name": "NEON PINBALL",
+  "description": "赛博朋克风格的网页弹珠游戏：霓虹弹珠台、双挡板、缓冲器与 OVERDRIVE 超载模式。",
   "lang": "zh-CN",
   "start_url": "/",
   "scope": "/",
   "display": "standalone",
-  "background_color": "#07090f",
-  "theme_color": "#07090f",
+  "orientation": "portrait",
+  "background_color": "#05070f",
+  "theme_color": "#05070f",
+  "categories": ["games", "entertainment"],
   "icons": [
     {
       "src": "/assets/img/icon-192.png",
