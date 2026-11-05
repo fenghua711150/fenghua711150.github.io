@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="风华 Fenghua">
+  <defs>
+    <linearGradient id="fhGradient" x1="0" y1="0" x2="64" y2="64" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#7DD3FC" />
+      <stop offset="0.55" stop-color="#A78BFA" />
+      <stop offset="1" stop-color="#F0ABFC" />
+    </linearGradient>
+    <linearGradient id="fhSheen" x1="0" y1="0" x2="0" y2="64" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFFFFF" stop-opacity="0.38" />
+      <stop offset="0.6" stop-color="#FFFFFF" stop-opacity="0" />
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="16" fill="url(#fhGradient)" />
+  <rect width="64" height="64" rx="16" fill="url(#fhSheen)" />
+  <path d="M23 17h20v6H29v7h11v6H29v11h-6z" fill="#06121C" />
+  <circle cx="47.5" cy="17.5" r="3" fill="#06121C" opacity="0.16" />
+</svg>

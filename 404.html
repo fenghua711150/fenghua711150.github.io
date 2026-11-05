@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>404 · 页面走丢了 — 风华 Fenghua</title>
+  <meta name="robots" content="noindex" />
+  <meta name="theme-color" content="#07090f" />
+  <link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="/assets/css/style.css" />
+  <script>
+    (function () {
+      try {
+        var saved = localStorage.getItem("fh-theme");
+        var light = window.matchMedia("(prefers-color-scheme: light)").matches;
+        document.documentElement.dataset.theme = saved || (light ? "light" : "dark");
+      } catch (e) {
+        document.documentElement.dataset.theme = "dark";
+      }
+    })();
+  </script>
+</head>
+
+<body>
+  <div class="backdrop" aria-hidden="true">
+    <div class="backdrop__grid"></div>
+    <div class="backdrop__glow backdrop__glow--a"></div>
+    <div class="backdrop__glow backdrop__glow--b"></div>
+    <div class="backdrop__noise"></div>
+  </div>
+
+  <main class="error-page">
+    <a class="brand" href="/" aria-label="风华，回到首页">
+      <span class="brand__mark" aria-hidden="true">F</span>
+      <span class="brand__text">fenghua711150<small>风华 · 个人网站</small></span>
+    </a>
+
+    <p class="error-page__code" aria-hidden="true">404</p>
+    <h1 class="error-page__title">这条路通向空白。</h1>
+    <p class="error-page__lead">
+      你要找的页面不存在，或者已经被移动到别处。<br />
+      不如回到首页，重新出发。
+    </p>
+
+    <div class="error-page__actions">
+      <a class="btn btn--primary" href="/">
+        回到首页
+        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" /></svg>
+      </a>
+      <a class="btn btn--ghost" href="https://github.com/fenghua711150" target="_blank" rel="noopener noreferrer">GitHub</a>
+    </div>
+
+    <p class="error-page__foot">风华 · FENGHUA — fenghua711150.github.io</p>
+  </main>
+</body>
+</html>
